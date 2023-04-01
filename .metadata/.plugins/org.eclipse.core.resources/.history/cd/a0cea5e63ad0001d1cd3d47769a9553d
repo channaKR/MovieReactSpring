@@ -1,0 +1,19 @@
+package com.web.api.service;
+
+import org.springframework.stereotype.Service;
+
+import com.web.api.model.Movie;
+import com.web.api.repo.MovieRepositary;
+
+@Service
+public class MovieImplement implements MovieService {
+	private MovieRepositary movierepositary;
+	@Override
+	public Movie saveMovie(Movie movie) {
+		return movierepositary.saveMovie(movie);
+		
+	}
+	
+	
+
+}

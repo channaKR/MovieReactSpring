@@ -1,0 +1,12 @@
+package com.web.api.service;
+
+import com.web.api.model.Movie;
+
+public class MovieImplement implements MovieService {
+
+	@Override
+	public Movie saveMovie(Movie movie) {
+	
+	}
+
+}

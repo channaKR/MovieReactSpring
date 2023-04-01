@@ -1,0 +1,5 @@
+package com.web.api.service;
+
+public interface MovieService implement MovieService {
+
+}

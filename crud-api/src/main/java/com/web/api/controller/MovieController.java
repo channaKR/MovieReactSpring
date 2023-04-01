@@ -1,0 +1,26 @@
+package com.web.api.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.web.api.model.Movie;
+import com.web.api.service.MovieService;
+
+@RestController
+@RequestMapping("/movie")
+
+public class MovieController {
+	@Autowired
+	private MovieService movieservice;
+	
+	@PostMapping("/addmovie")
+	public String addMovie(@RequestBody Movie movie) {
+		movieservice.saveMovie(movie);
+		return "Movie Save";
+		
+		
+	}
+}
