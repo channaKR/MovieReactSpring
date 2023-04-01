@@ -1,5 +1,7 @@
 package com.web.api.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +17,14 @@ public class MovieImplement implements MovieService {
 		return movierepositary.save(movie);
 		
 	}
-	
+	@Override
+	public List<Movie> getAllMovie() {
+		// TODO Auto-generated method stub
+		return movierepositary.findAll();
+	}
+
+
+
 	
 
 }

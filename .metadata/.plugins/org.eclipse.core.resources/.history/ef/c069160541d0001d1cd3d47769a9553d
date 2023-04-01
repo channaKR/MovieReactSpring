@@ -1,0 +1,8 @@
+package com.web.api.service;
+
+import com.web.api.model.Movie;
+
+public interface MovieService  {
+public Movie  saveMovie(Movie movie);
+public List<Moive>getAllMovie();
+}
