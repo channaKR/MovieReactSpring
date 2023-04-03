@@ -1,0 +1,5 @@
+package com.web.api.exception;
+@ControllerAdvice
+public class UserAddvice {
+
+}

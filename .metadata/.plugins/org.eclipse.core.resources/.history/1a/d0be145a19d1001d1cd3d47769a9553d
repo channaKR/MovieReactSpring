@@ -1,0 +1,18 @@
+package com.web.api.exception;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class UserAddvice {
+	@ResponseBody
+    @ExceptionHandler(UserNotFound.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+	 public Map<String,String> exceptionHandler(UserNotFound exception){
+
+        Map<String,String> errorMap=new HashMap<>();
+        errorMap.put("errorMessage",exception.getMessage());
+
+        return errorMap;
+
+    }
+}

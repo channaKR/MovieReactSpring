@@ -1,0 +1,15 @@
+package com.web.api.exception;
+
+public class UserNotFound extends RuntimeException {
+
+	/**
+	 * 
+	 */
+	
+	public UserNotFound(Integer Id) {
+		super(Id+" "+"User Not Found");
+		
+	}
+	
+
+}

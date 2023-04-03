@@ -1,0 +1,12 @@
+package com.web.api.exception;
+
+public class UserNotFound extends RuntimeException {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2572432212416322134L;
+	
+	
+
+}
